@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "test pipeline - schema one",
+    "description": "Schema for one.csv file",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string",
+                "meta": ["id"]
+            },
+            "foo": {
+                "type": "string",
+                "meta" : ["foo"]
+            },
+            "bar": {
+                "type": "number",
+                "meta" : ["bar"]
+            },
+            "string": {
+                "type": "string",
+                "meta" : ["num"]
+            },
+            "num": {
+                "type": "number",
+                "meta" : ["num"]
+            }
+        },
+        "required": ["id", "foo", "bar"]
+    }
+}

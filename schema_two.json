@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "test pipeline - schema one",
+    "description": "Schema for one.csv file",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "foo": {
+                "type": "string",
+                "meta" : ["foo"]
+            },
+            "path": {
+                "type": "string",
+                "meta" : ["path"],
+                "format": "file-path",
+                "exists": true
+            }
+        },
+        "required": ["foo", "path"]
+    }
+}
