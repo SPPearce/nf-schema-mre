@@ -20,7 +20,7 @@
             },
             "string": {
                 "type": "string",
-                "meta" : ["num"]
+                "meta" : ["string"]
             },
             "num": {
                 "type": "number",
